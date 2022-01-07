@@ -155,10 +155,14 @@ li {
     grid-area: nav;
     display: flex;
     align-content: space-around; }
-    .nav li a {
-      animation: pulse;
-      animation-duration: 1s;
-      transition: all 0.5s; }
+    .nav li {
+      font-size: 1rem;
+      transition: font-size 0.5s; }
+      .nav li :hover {
+        font-size: 17px; }
+      .nav li a {
+        animation: pulse;
+        animation-duration: 1s; }
   .cuerpo {
     grid-area: cuerpo;
     margin: 15px;
@@ -177,9 +181,9 @@ li {
       justify-content: center; }
   .cuerpoEquipo {
     display: grid;
-    grid-template-areas: "person1 person2" "person3 person4" "person5 person6";
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr); }
+    grid-template-areas: "person1 person2 person3" "person4 person5 person6";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
   .person1 {
     grid-area: person1;
     display: flex;

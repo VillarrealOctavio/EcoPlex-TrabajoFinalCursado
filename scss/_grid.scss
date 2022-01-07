@@ -1,0 +1,294 @@
+li {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+@import "colores";
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+	.gridContainer {
+	display: grid;
+    grid-template-areas: "cabeza" "cuerpo" "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 60% 20%;
+    margin:4px 17px ;
+	}
+	.cabeza {
+	grid-area: cabeza;
+	background-color: $celeste;
+	display: grid;
+	grid-template-areas: "logo" "nav";
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+	}
+	.logo {
+	grid-area: logo;
+	display: flex;
+	justify-content: center;
+	  img {
+	  	width: 200px;
+	  	height: 200px;
+	  }
+	}
+	.nav {
+	grid-area: nav;
+	display: flex;
+	align-content:center;
+	}
+	.cuerpo {
+	grid-area: cuerpo;
+	margin: 4px 17px;
+	}
+	.cuerpoInst {
+	display: grid;
+    grid-template-areas: "hist" "act" "ubi";
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 50%;
+	} 
+	.hist {
+	grid-area: hist;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	}
+	.act {
+	grid-area: act;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	}
+	.ubi {
+	grid-area: ubi;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	 iframe {
+	 		width: 420px;
+	 		height: 340px;
+	 }
+	}
+	.cuerpoEquipo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.person1 {
+		display: flex;
+		flex-direction: column;
+	}
+	.person2 {
+		display: flex;
+		flex-direction: column;
+	}
+	.person3 {
+		display: flex;
+		flex-direction: column;
+	}
+	.person4 {
+		display: flex;
+		flex-direction: column;
+	}
+	.person5 {
+		display: flex;
+		flex-direction: column;
+	}
+	.person6 {
+		display: flex;
+		flex-direction: column;
+	} 
+	.pie {
+	grid-area: pie;
+	background-color: $celeste;
+	display: grid;
+    grid-template-areas: "pieLogo" "pieNav" "pieRedes" "pieDerechos";
+    grid-template-columns: 100%;
+    grid-template-rows: 55% 15% 15% 15%;
+    margin: 4px 17px;
+	}
+	.pieLogo {
+	grid-area: pieLogo;
+	display: flex;
+	justify-content: center;
+	 a img {
+	 	height: 150px;
+	 }	
+	}
+	.pieNav {
+	grid-area: pieNav;
+	display: flex;
+	justify-content: center;
+	}
+	.pieRedes {
+	grid-area: pieRedes;
+	display: flex;
+	justify-content: flex-end;
+	}
+	.pieDerechos {
+	grid-area: pieDerechos;
+	display: flex;
+	justify-content: flex-end;
+	}
+}
+
+
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1900px) {
+	.gridContainer {
+	display: grid;
+    grid-template-areas: "cabeza" "cuerpo" "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 60% 20%;
+    margin: 15px;
+	}
+	.cabeza {
+	grid-area: cabeza;
+	background-color: $celeste;
+	display: grid;
+	grid-template-areas: "logo nav";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+	}
+	.logo {
+	grid-area: logo;
+	display: flex;
+	justify-content: center;
+		img {
+		width: 200px;
+		height: 200px;
+		}
+	}
+	.nav {
+	grid-area: nav;
+	display: flex;
+	align-content: space-around;
+	 li a{
+	 	animation: pulse;
+  		animation-duration: 1s;
+  		transition: all 0.5s;
+	 }
+	}
+	.cuerpo {
+	grid-area: cuerpo;
+	margin:15px;
+	heigth: 1200px;
+	}
+	.cuerpoInst {
+		display: grid;
+		grid-template-areas:"hist act" "ubi ubi";
+    	grid-template-columns:50% 50%;
+    	grid-template-rows: 20% 80%;
+    		.hist, .act, .ubi{
+    		display: flex;
+    		flex-direction: column;
+    		align-items: center;
+    		}
+    		.ubi {
+    		width: auto;
+    		justify-content: center;
+    		}
+	}
+	.cuerpoEquipo {
+		display: grid;
+		grid-template-areas: "person1 person2" "person3 person4" "person5 person6";
+    	grid-template-columns: repeat(2, 1fr);
+    	grid-template-rows: repeat(3, 1fr);
+	}
+	.person1 {
+		grid-area: person1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		
+	}
+	.person2 {
+		grid-area: person2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		
+	}
+	.person3 {
+		grid-area: person3;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		
+	}
+	.person4 {
+		grid-area: person4;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		
+	}
+	.person5 {
+		grid-area: person5;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		
+	}
+	.person6 {
+		grid-area: person6;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		
+	} 
+	.areas {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 10px;
+	}
+	.borde {
+		border-radius: 20px;
+	}
+	.pie {
+	grid-area: pie;
+	background-color: $celeste;
+	display: grid;
+    grid-template-areas:"logo nav redes" "derechos derechos derechos";
+    grid-template-columns:20% 60% 20%;
+    grid-template-rows: 80% 20%;
+	}
+	.pieLogo {
+		grid-area: logo;
+		display: flex; 
+		justify-content: center;
+	}
+	.pieNav {
+		grid-area: nav; 
+		display: flex;
+		justify-content: center;
+		 li a{
+		   	animation: bounce; 
+  			animation-duration: 1s; 
+		 }
+	}
+	.pieRedes {
+		grid-area: redes;
+		display: flex;
+		align-items: center;
+	}
+	.pieDerechos {
+		grid-area:	derechos;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+}

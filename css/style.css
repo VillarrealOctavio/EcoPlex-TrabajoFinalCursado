@@ -80,29 +80,6 @@ li {
     .ubi iframe {
       width: 420px;
       height: 340px; }
-  .cuerpoEquipo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
-  .person1 {
-    display: flex;
-    flex-direction: column; }
-  .person2 {
-    display: flex;
-    flex-direction: column; }
-  .person3 {
-    display: flex;
-    flex-direction: column; }
-  .person4 {
-    display: flex;
-    flex-direction: column; }
-  .person5 {
-    display: flex;
-    flex-direction: column; }
-  .person6 {
-    display: flex;
-    flex-direction: column; }
   .pie {
     grid-area: pie;
     background-color: #BEE3DB;
@@ -194,47 +171,6 @@ li {
     justify-content: center;
     width: auto;
     margin: 5px; }
-  .cuerpoEquipo {
-    display: grid;
-    grid-template-areas: "person1 person2 person3" "person4 person5 person6";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr); }
-  .person1 {
-    grid-area: person1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
-  .person2 {
-    grid-area: person2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
-  .person3 {
-    grid-area: person3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
-  .person4 {
-    grid-area: person4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
-  .person5 {
-    grid-area: person5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
-  .person6 {
-    grid-area: person6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
   .areas {
     display: flex;
     flex-direction: column;

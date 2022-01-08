@@ -18,15 +18,15 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>EcoPlex-Equipo</title>
   </head>
-  <body>
-    <div class="gridContainer">
+  <body class="container-fluid">
       
+      <!-- AQUÍ INTRODUZCO LOGO Y BARRA DE NAVEGACIÓN-->  
 
-      <header class="cabeza borde position-sticky fixed-top" style="background-image:linear-gradient(to bottom, #BEE3DB, #FFF);">
+      <div class="row bgc-head m-1 borde position-sticky fixed-top" style="background-image:linear-gradient(to bottom, #BEE3DB, #FFF);">
         <!-- Logo -->
-        <a class="logo" href="../index.html"><img src="../assets/img/EcoPlex.png" alt="Logo"></a>
+        <a class="col-md-4 col-xs-12 d-flex justify-content-center" href="../index.html"><img src="../assets/img/EcoPlex.png" alt="Logo"></a>
         <!-- Nav -->
-        <ul class="nav nav-pills nav-fill nav" data-aos="flip-down">
+        <ul class="nav nav-pills nav-fill col-md-8 col-xs-12 d-flex align-items-center" data-aos="flip-down">
             <li class="nav-item">
               <a class="nav-link" href="../index.html">Home</a>
             </li>
@@ -48,60 +48,63 @@
                 <a class="dropdown-item" href="#">Inglés</a>
             </li>
         </ul>
-      </header>
+      </div>
 
-      <main class="cuerpo cuerpoEquipo" style="background-color: #FFF;">
+      <!-- AQUÍ SE INCORPORA UN CAROUSEL E INFORMACIÓN DEL INDEX -->
 
-          <div class="card person1" data-aos="flip-left" style="width: 11rem;">
+      <div class="row m-3" style="background-color: #FFF;">
+
+          <div class="card col-md-4 col-xs-12 p-3 borde" data-aos="flip-left" style="width: 11rem;">
             <img src="../assets/img/pexels-linkedin-sales-navigator-2182970.jpg" class="card-img-top" alt="Img">
             <div class="card-body">
               <h5 class="card-title">Director Ejecutivo y Fundador</h5>
             </div>
           </div>
 
-          <div class="card person2" data-aos="flip-left" style="width: 11rem;">
+          <div class="card col-md-4 col-xs-12 p-3 borde" data-aos="flip-left" style="width: 11rem;">
             <img src="../assets/img/pexels-christina-morillo-1181424.jpg" class="card-img-top" alt="Img">
             <div class="card-body">
               <h5 class="card-title">Co-Directora y Fundadora</h5>
             </div>
           </div>
 
-          <div class="card person3" data-aos="flip-left" style="width: 11rem;">
+          <div class="card col-md-4 col-xs-12 p-3 borde" data-aos="flip-left" style="width: 11rem;">
             <img src="../assets/img/pexels-sora-shimazaki-5668875.jpg" class="card-img-top" alt="Img">
             <div class="card-body">
               <h5 class="card-title">Directora de Finanzas</h5>
             </div>
           </div>
 
-          <div class="card person4" data-aos="flip-left" style="width: 11rem;">
+          <div class="card col-md-4 col-xs-12 p-3 borde" data-aos="flip-left" style="width: 11rem;">
             <img src="../assets/img/pexels-italo-melo-2379004.jpg" class="card-img-top" alt="Img">
             <div class="card-body">
               <h5 class="card-title">Director de Investigación y Proyecto</h5>
             </div>
           </div>
 
-          <div class="card person5" data-aos="flip-left" style="width: 11rem;">
+          <div class="card col-md-4 col-xs-12 p-3 borde" data-aos="flip-left" style="width: 11rem;">
             <img src="../assets/img/pexels-karolina-grabowska-7875832.jpg" class="card-img-top" alt="Img">
             <div class="card-body">
               <h5 class="card-title">Directora de Proyecciones</h5>
             </div>
           </div>
 
-          <div class="card person6" data-aos="flip-left" style="width: 11rem;">
+          <div class="card col-md-4 col-xs-12 p-3 borde" data-aos="flip-left" style="width: 11rem;">
             <img src="../assets/img/pexels-pixabay-220453.jpg" class="card-img-top" alt="Img">
             <div class="card-body">
               <h5 class="card-title">Gerente de Relaciones Institucionales</h5>
             </div>
           </div> 
-      </main>
+      </div>
 
+       <!-- INTRODUZCO PIE (LOGO, MINI NAV, DERECHOS, REDES SOCIALES) -->
 
-
-      <footer class="pie borde" style="background-image:linear-gradient(to bottom, #FFF, #BEE3DB);">
-        <div class="pieLogo">
+      <div class="row bgc-footer m-1 borde" style="background-image:linear-gradient(to bottom, #FFF, #BEE3DB);">
+        <div class="col-md-4 col-xs-12 d-flex justify-content-center">
           <a href="../index.html"><img src="../assets/img/EcoPlex.png" alt="Logo"></a>
         </div>
-        <ul class="nav nav-pills pieNav">
+
+        <ul class="nav nav-pills col-md-6 col-xs-8 d-flex align-items-center justify-content-center">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">Home</a>
               </li>
@@ -118,7 +121,8 @@
                 <a class="nav-link" href="../pagesbs/areas.html">Áreas</a>
               </li>
         </ul>
-         <div class="pieRedes">     
+
+         <div class="col-md-2 col-xs-4 d-flex align-items-center justify-content-end">     
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Redes Sociales</a>
                 <div class="dropdown-menu">
@@ -127,12 +131,12 @@
                   <a class="dropdown-item" href="#">Twitter</a>
                   <a class="dropdown-item" href="#">Instagram</a>
               </li>
-         </div>             
-        <div class="pieDerechos">
+         </div> 
+
+        <div class="col-md-12 col-xs-12 d-flex justify-content-end">
           <h4>Derechos reservados.2021 EcoPlex ©</h4>
         </div>
-      </footer>
-    </div>
+      </div>
     
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
